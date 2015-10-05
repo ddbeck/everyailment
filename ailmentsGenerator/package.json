@@ -1,0 +1,20 @@
+{
+  "name": "ailmentsGenerator",
+  "version": "0.1.0",
+  "description": "A script that generates JSON files of ICD-10 medical codes.",
+  "author": "Daniel D. Beck <me@danieldbeck.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddbeck/everyailment.git"
+  },
+  "dependencies": {
+    "commander": "^2.8.1",
+    "xmldom": "^0.1.19",
+    "xpath": "0.0.9"
+  },
+  "devDependencies": {
+    "standard": "^5.3.1"
+  },
+  "private": true,
+  "license": "MIT"
+}
