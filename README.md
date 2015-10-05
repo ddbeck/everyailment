@@ -27,7 +27,7 @@ Every Ailment requires Python 3.5. To install Every Ailment:
 
 ## Usage
 
-To tweet with Every Ailment, run `everyailment --keyfile <path_to_keyfile> <index_file_path>`.
+To tweet with Every Ailment, run `everyailment --post --keyfile <path_to_keyfile> <index_file_path>` (optionally, you can see what the next tweet is without actually posting to Twitter by omitting the `--post` option).
 
 
 ## About the ICD-10-CM
