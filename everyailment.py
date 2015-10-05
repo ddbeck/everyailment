@@ -5,6 +5,7 @@
 import json
 import os
 import textwrap
+import time
 
 import click
 import twython
@@ -23,7 +24,7 @@ def make_tweets(index, codes):
     else:
         wrapped = textwrap.wrap(tweet, 100)
         return ['{}… (1/2)'.format(wrapped[0]),
-                '@everyailment …{} (2/2)'.format(wrapped[1])]
+                '…{} (2/2)'.format(wrapped[1])]
 
 
 def increment_index(indexfile):
@@ -116,8 +117,6 @@ def cli(indexfile, auth_info, post):
                               auth_info['access_key'],
                               auth_info['access_secret'])
 
-    twitter
-
     index = json.load(indexfile)['index']
     with open(DEFAULT_CODES_FILE) as fp:
         codes = json.load(fp)
@@ -131,7 +130,7 @@ def cli(indexfile, auth_info, post):
             prev_status = result['id_str']
         else:
             click.echo(tweet)
-
+        time.sleep(2)
     if post:
         increment_index(indexfile)
 
