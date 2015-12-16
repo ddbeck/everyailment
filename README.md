@@ -2,6 +2,10 @@
 
 Every Ailment is a bot that's tweeting each and every code of the FY2016 release of the [International Classification of Diseases, Tenth Revision, Clinical Modification](http://www.cdc.gov/nchs/icd/icd10cm.htm) (ICD-10-CM). There are approximately 43,000 codes known to Every Ailment; tweeting twice an hour, it will take about two and half years to complete its task.
 
+## Accolades
+
+Every Ailment [was named the eleventh best bot of 2015](http://qz.com/572763/the-best-twitter-bots-of-2015/) by Quartz.
+
 
 ## Installation
 
@@ -44,7 +48,7 @@ Every Ailment was made by [Daniel Beck](http://twitter.com/ddbeck). Every Ailmen
 
 You are free to use, copy, modify, and distribute this software under the terms of an MIT license. See the `LICENSE` file for details.
 
-The status of the list of codes is a bit murkier, however. [According to the WHO (PDF)](http://www.who.int/about/licensing/Internettext_FAQ.pdf): 
+The status of the list of codes is a bit murkier, however. [According to the WHO (PDF)](http://www.who.int/about/licensing/Internettext_FAQ.pdf):
 
 > The governments of certain countries have developed clinical modifications however, WHO is not responsible for these modifications. The authorities concerned should be contacted to obtain a license for the use of the modifications
 
