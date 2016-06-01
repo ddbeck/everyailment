@@ -4,6 +4,7 @@
 
 import json
 import os
+import sys
 import textwrap
 import time
 
@@ -123,16 +124,21 @@ def cli(indexfile, auth_info, post):
 
     tweets = make_tweets(index, codes)
     prev_status = None
-    for tweet in tweets:
+    try:
+        for tweet in tweets:
+            if post:
+                result = twitter.update_status(
+                    status=tweet,
+                    in_reply_to_status_id=prev_status)
+                prev_status = result['id_str']
+            else:
+                click.echo(tweet)
+            time.sleep(2)
         if post:
-            result = twitter.update_status(status=tweet,
-                                           in_reply_to_status_id=prev_status)
-            prev_status = result['id_str']
-        else:
-            click.echo(tweet)
-        time.sleep(2)
-    if post:
-        increment_index(indexfile)
+            increment_index(indexfile)
+    except:
+        print("Attempted to tweet: {}".format(tweets), file=sys.stderr)
+        raise
 
 
 if __name__ == '__main__':
