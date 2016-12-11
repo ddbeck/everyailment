@@ -1,6 +1,6 @@
 # Every Ailment
 
-Every Ailment is a bot that's tweeting each and every code of the FY2016 release of the [International Classification of Diseases, Tenth Revision, Clinical Modification](http://www.cdc.gov/nchs/icd/icd10cm.htm) (ICD-10-CM). There are approximately 43,000 codes known to Every Ailment; tweeting twice an hour, it will take about two and half years to complete its task.
+[Every Ailment](https://twitter.com/everyailment) is a bot that's tweeting each and every code of the FY2016 release of the [International Classification of Diseases, Tenth Revision, Clinical Modification](http://www.cdc.gov/nchs/icd/icd10cm.htm) (ICD-10-CM). There are approximately 43,000 codes known to Every Ailment; tweeting twice an hour, it will take about two and half years to complete its task.
 
 ## Accolades
 
