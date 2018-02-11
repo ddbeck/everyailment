@@ -20,10 +20,10 @@ def make_tweets(index, codes):
     next_code = codes['codes'][index + 1]
     tweet = '{code} {desc}'.format(**next_code)
 
-    if len(tweet) < 141:
+    if len(tweet) < 281:
         return [tweet]
     else:
-        wrapped = textwrap.wrap(tweet, 100)
+        wrapped = textwrap.wrap(tweet, 250)
         return ['{}… (1/2)'.format(wrapped[0]),
                 '…{} (2/2)'.format(wrapped[1])]
 
@@ -129,6 +129,7 @@ def cli(indexfile, auth_info, post):
             if post:
                 result = twitter.update_status(
                     status=tweet,
+                    tweet_mode="extended",
                     in_reply_to_status_id=prev_status)
                 prev_status = result['id_str']
             else:
